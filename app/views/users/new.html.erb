@@ -1,0 +1,12 @@
+<h1>New User</h1>
+
+<form accept-charset="UTF-8" action="/users" data-remote="true" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label for="user[username]">Username:</label>
+  <input type="text" name="user[username]" id="user[username]">
+  <label for="user[email]">E-Mail:</label>
+  <input type="email" name="user[email]" id="user[email]">
+  <label for="user[password]">Password:</label>
+  <input type="password" name="user[password]" id="user[password]"><br>
+  <input type="submit" value="Create User">
+</form>
